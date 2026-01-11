@@ -1,1 +1,1 @@
-Pandas pipeline projects
+Pandas

@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+"""a function def cat_matrices2D(mat1, mat2, axis=0):
+ that concatenates two matrices along a specific axis"""
+shape = __import__('2-size_me_please').matrix_shape
+
+
+def cat_matrices2D(mat1, mat2, axis=0):
+    """a function def cat_matrices2D(mat1, mat2, axis=0):
+     that concatenates two matrices along a specific axis"""
+    if not mat1 or not mat2:
+        return None
+    if len(mat1[0]) == len(mat2[0]) and axis == 0:
+        result = []
+        for row in mat1:
+            result.append(row[:])
+        for row in mat2:
+            result.append(row[:])
+        return result
+
+    elif (len(mat1) == len(mat2)) and axis == 1:
+        cat_metrice = []
+        for i in range(len(mat1)):
+            cat_metrice.append(mat1[i] + mat2[i])
+        return cat_metrice
+    else:
+        return None

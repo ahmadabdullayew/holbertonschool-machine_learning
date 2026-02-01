@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """a function def matrix_shape(matrix):
-that calculates the shape of a matrix
-"""
+ that calculates the shape of a matrix"""
 
 
 def matrix_shape(matrix):
-    """Calculates the shape of a matrix"""
+    """a function def matrix_shape(matrix):
+     that calculates the shape of a matrix"""
     matrix_shape = []
     while isinstance(matrix, list):
         matrix_shape.append(len(matrix))

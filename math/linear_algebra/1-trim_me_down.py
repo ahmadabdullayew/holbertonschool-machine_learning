@@ -4,6 +4,3 @@ the_middle = []
 for i in range(len(matrix)):
     the_middle.append([matrix[i][len(matrix[0]) // 2 - 1], matrix[i][len(matrix[0]) // 2]])
 print("The middle rows of the matrix are: {}".format(the_middle))
-
-
-

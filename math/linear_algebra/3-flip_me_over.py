@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 def matrix_transpose(matrix):
+    if not matrix or not matrix[0]:
+        return []
+
     rows = len(matrix)
     cols = len(matrix[0])
 

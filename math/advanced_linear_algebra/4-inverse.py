@@ -16,7 +16,7 @@ def inverse(matrix):
                       for _ in range(len(matrix))]
     for i in range(len(adjugate_matrix)):
         for j in range(len(adjugate_matrix)):
-            inverse_matrix[i][j] = \
+            inverse_matrix[i][j] = (
                 adjugate_matrix[i][j] / determinant_of_matrix
+            )
     return inverse_matrix
-

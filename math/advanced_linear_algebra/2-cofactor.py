@@ -24,6 +24,6 @@ def cofactor(matrix):
     cofactor_matrix = [[0 for _ in range(n)] for _ in range(n)]
     for i in range(n):
         for j in range(n):
-            p = (-1)**(i+j)
+            p = (-1) ** (i + j)
             cofactor_matrix[i][j] = p * minor_matrix[i][j]
     return cofactor_matrix

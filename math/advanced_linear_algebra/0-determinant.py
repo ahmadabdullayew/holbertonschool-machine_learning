@@ -23,12 +23,12 @@ def determinant(matrix):
         return matrix[0][0]
 
     if n == 2:
-        return matrix[0][0]*matrix[1][1] - matrix[0][1]*matrix[1][0]
+        return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
 
     det = 0
     for j in range(n):
-        sub_matrix = [row[:j] + row[j+1:] for row in matrix[1:]]
-        i = (-1)**(0+j)
-        det += i * matrix[0][j]*determinant(sub_matrix)
+        sub_matrix = [row[:j] + row[j + 1:] for row in matrix[1:]]
+        sign = (-1) ** j
+        det += sign * matrix[0][j] * determinant(sub_matrix)
 
     return det
